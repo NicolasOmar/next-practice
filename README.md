@@ -20,16 +20,31 @@ Repository created to record my practice learning React with exercises based on 
 | `0.0.X` | Dependencies version updates and specific patches while the course is not completed |
 
 ## Requirements
-TBA
+ - [Node](https://nodejs.org/en/download/) `v20` or above
 
 ## Setup
-TBA
+After cloning the repo, go to the created folder and install the node packages.
+```sh
+git clone https://github.com/NicolasOmar/next-practice.git
+cd next-practice
+npm run setup-all
+```
+`setup-all` is the command to install all the projects, but if you want to do it one by one, you can change that last line for one of the following:
+| App Setup | Command |
+| ------ | ------ |
+| All | `npm run setup-all` |
+| React Basics | `npm run react-basics` |
 
 ## How to run it
-TBA
+To run any specific exercise, execute the following command in the project´s folder:
+```sh
+npm start
+```
 
 ## Repo structure & what i learned in each exercise
-TBA
+ - React Basics (`1-react-basics` folder)
+   - Learn about React concepts such as `components` and `props passage`.
+   - Create a new project based on `Vite`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |

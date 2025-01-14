@@ -1,0 +1,12 @@
+NextJs
+  You can check the source code
+  Vanilla React Apps render on the client
+    Its UI can be reviewed in the browers
+  App router
+    modern way
+    relatively new
+    used for server actions in react server components
+  Page router
+    older way
+    stable
+    used in many projects
