@@ -45,6 +45,7 @@ npm start
  - React Basics (`1-react-basics` folder)
    - Learn about React concepts such as `components` and `props passage`.
    - Create a new project based on `Vite`.
+   - Understanding and usage of `CSS modules`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
