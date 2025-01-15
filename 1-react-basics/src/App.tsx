@@ -4,7 +4,7 @@
     - style files (from css to scss)
     - reusable logic functions (from javascript or typescript)
 */
-import Post from './components/Post'
+import PostList from './components/PostList/PostList'
 // In this case, I am importing an interface to accelerate the information type I will deliver to the component
 import { PostDataItem } from './interfaces'
 
@@ -16,7 +16,7 @@ const postsData: PostDataItem[] = [
 ]
 
 function App() {
-  return postsData.map(_postData => <Post {..._postData} />)
+  return <PostList dataList={postsData} />
 }
 
 export default App

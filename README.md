@@ -43,7 +43,7 @@ npm start
 
 ## Repo structure & what i learned in each exercise
  - React Basics (`1-react-basics` folder)
-   - Learn about React concepts such as `components` and `props passage`.
+   - Learn about React concepts such as `components`, `props passage`, `input change methods`, `function passing though components` and `conditional rendering`.
    - Create a new project based on `Vite`.
    - Understanding and usage of `CSS modules`.
 
