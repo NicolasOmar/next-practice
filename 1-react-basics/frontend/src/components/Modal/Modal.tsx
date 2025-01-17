@@ -1,32 +1,28 @@
 import { FC, ReactElement } from 'react'
 import modalClasses from './Modal.module.css'
+import { useNavigate } from 'react-router-dom'
 
 interface ModalProps {
   children: ReactElement
-  isOpen: boolean
-  onBackgroundClick: () => void
 }
 
-const Modal: FC<ModalProps> = ({ children, isOpen, onBackgroundClick }) => {
+const Modal: FC<ModalProps> = ({ children }) => {
+  // useNavigate is a hook that allows to navigate to a specific route
+  const navigate = useNavigate()
+  const closeHandler = () => {
+    // on this handler method, it will redirect the user to a previous route
+    navigate('..')
+  }
+
   return (
     <>
-      {
-        /*
-          To display the background only if the modal is open, I added a conditional rendering
-          First, you add the boolean that will make that condition
-          Then, you explain what will be rendered if the conditional is true and if is false
-          In this case, if the boolean isOpen is false, it will render nothing because is null
-        */
-        isOpen ? (
-          <section
-            className={modalClasses.backdrop}
-            onClick={() => onBackgroundClick()}
-          />
-        ) : null
-      }
+      <section
+        className={modalClasses.backdrop}
+        onClick={closeHandler}
+      />
       <dialog
         className={modalClasses.modal}
-        open={isOpen}
+        open
       >
         {children}
       </dialog>
