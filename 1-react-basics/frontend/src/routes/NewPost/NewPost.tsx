@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, FormEvent, FC } from 'react'
-import { Link } from 'react-router-dom'
+import { Form, Link, redirect } from 'react-router-dom'
 import Modal from '../../components/Modal/Modal'
 import newPostClasses from './NewPost.module.css'
 import { BASE_URL } from '../../constants'
@@ -28,7 +28,7 @@ const NewPost: FC = () => {
 
   return (
     <Modal>
-      <form
+      <Form
         className={newPostClasses.form}
         method='post'
       >
@@ -45,11 +45,11 @@ const NewPost: FC = () => {
           />
         </p>
         <p>
-          <label htmlFor='name'>Your name</label>
+          <label htmlFor='author'>Your name</label>
           <input
             type='text'
-            id='name'
-            name='name'
+            id='author'
+            name='author'
             required
             value={newAuthor}
             onChange={handleAuthorChange}
@@ -61,20 +61,24 @@ const NewPost: FC = () => {
           {/* If you do not assign a type for this button, it will work as the submit type one */}
           <button>Submit</button>
         </p>
-      </form>
+      </Form>
     </Modal>
   )
 }
 
 export default NewPost
 
-export const actionNewPost = (actionData: any) => {
-  const postData = actionData.request.formData()
-  fetch(`${BASE_URL}/posts`, {
+export const actionNewPost = async (actionData: any) => {
+  const formData = await actionData.request.formData()
+  const postData = Object.fromEntries(formData)
+
+  await fetch(`${BASE_URL}/posts`, {
     method: 'POST',
     body: JSON.stringify(postData),
     headers: {
       'Content-Type': 'application/json'
     }
   })
+
+  return redirect('/')
 }

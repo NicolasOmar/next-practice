@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Post from '../Post/Post'
 // In this case, I am importing an interface to accelerate the information type I will deliver to the component
-import postListClasses from './PostList.module.css'
 import { PostDataItem } from '../../interfaces'
+import postListClasses from './PostList.module.css'
 
 const PostList: FC = () => {
   /**
@@ -13,6 +13,7 @@ const PostList: FC = () => {
 
   /**
    * --- DEPRECATED CODE, INCLUDED FOR ITS COMMENTS---
+   *
    * The useEffect hook is used for different purposes
    * For this case, is used to handle a query call where you are fetching data from a service
    * and setting its data in local-level post list
@@ -37,7 +38,6 @@ const PostList: FC = () => {
 
   //   fetchPosts()
   // }, [])
-
 
   return (
     <>

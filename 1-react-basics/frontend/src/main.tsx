@@ -9,6 +9,9 @@ import './index.css'
 import Posts, { postsLoader } from './routes/Posts.tsx'
 import NewPost, { actionNewPost } from './routes/NewPost/NewPost.tsx'
 import RootLayout from './routes/RootLayout.tsx'
+import PostDetails, {
+  postDetailsLoader
+} from './routes/PostDetails/PostDetails.tsx'
 
 /**
  * Route configuration can have several levels giving what your app needs
@@ -32,12 +35,17 @@ const ROUTES = [
         loader: postsLoader,
         children: [
           {
-            path: 'create-post',
+            path: '/create-post',
             element: <NewPost />,
             /**
              * The same logic can be used to send data from a form to an API avoiding usage of hooks by using the action logic
              */
             action: actionNewPost as any
+          },
+          {
+            path: '/:id',
+            element: <PostDetails />,
+            action: postDetailsLoader
           }
         ]
       }

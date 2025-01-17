@@ -48,7 +48,7 @@ npm start
    - Learn about React concepts such as `components`, `props passage`, `input change methods`, `function passing though components` and `conditional rendering`.
    - Understanding of its core hooks such as `useState` and `useEffect`.
    - Understand how to handle REST API calls.
-   - Understanding and usage of routing engine implementation by `react-router-dom`.
+   - Understanding and usage of routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
