@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: latest
     - name: 3/4 | Install dependencies
-      run: npm cu
+      run: npm ci
     - name: 4/4 | Run Semantic Release script
       run: npm run semantic-release
       env:
