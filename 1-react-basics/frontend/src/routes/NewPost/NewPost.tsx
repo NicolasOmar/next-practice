@@ -2,6 +2,8 @@ import { useState, ChangeEvent, FormEvent, FC } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from '../../components/Modal/Modal'
 import newPostClasses from './NewPost.module.css'
+import { BASE_URL } from '../../constants'
+import { PostDataItem } from '../../interfaces'
 
 const NewPost: FC = () => {
   const [newBody, setNewBody] = useState<string>('')
@@ -28,12 +30,13 @@ const NewPost: FC = () => {
     <Modal>
       <form
         className={newPostClasses.form}
-        onSubmit={handleSubmit}
+        method='post'
       >
         <p>
           <label htmlFor='body'>Text</label>
           <textarea
             id='body'
+            name='body'
             required
             rows={3}
             value={newBody}
@@ -46,6 +49,7 @@ const NewPost: FC = () => {
           <input
             type='text'
             id='name'
+            name='name'
             required
             value={newAuthor}
             onChange={handleAuthorChange}
@@ -63,3 +67,14 @@ const NewPost: FC = () => {
 }
 
 export default NewPost
+
+export const actionNewPost = (actionData: any) => {
+  const postData = actionData.request.formData()
+  fetch(`${BASE_URL}/posts`, {
+    method: 'POST',
+    body: JSON.stringify(postData),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+}

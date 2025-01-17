@@ -6,8 +6,8 @@ import { createRoot } from 'react-dom/client'
  */
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import Posts from './routes/Posts.tsx'
-import NewPost from './routes/NewPost/NewPost.tsx'
+import Posts, { postsLoader } from './routes/Posts.tsx'
+import NewPost, { actionNewPost } from './routes/NewPost/NewPost.tsx'
 import RootLayout from './routes/RootLayout.tsx'
 
 /**
@@ -24,7 +24,22 @@ const ROUTES = [
       {
         path: '/',
         element: <Posts />,
-        children: [{ path: 'create-post', element: <NewPost /> }]
+        /**
+         * A way to load the needed data instead using a useEffect hook and API calls is using a loader function
+         * that will be called before loading the entire component
+         * Wheyn the loader function is called, it will return the data needed to be used in the component
+         */
+        loader: postsLoader,
+        children: [
+          {
+            path: 'create-post',
+            element: <NewPost />,
+            /**
+             * The same logic can be used to send data from a form to an API avoiding usage of hooks by using the action logic
+             */
+            action: actionNewPost as any
+          }
+        ]
       }
     ]
   }
