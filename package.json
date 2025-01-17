@@ -1,0 +1,43 @@
+{
+  "name": "next-practice",
+  "version": "0.0.0",
+  "author": "Nicolás Omar González Passerino",
+  "license": "MIT",
+  "private": true,
+  "description": "Repository created to record my practice learning NextJs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasOmar/next-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NicolasOmar/next-practice/issues"
+  },
+  "homepage": "https://github.com/NicolasOmar/next-practice#readme",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "setup-react-basics": "cd ./1-react-basics/frontend && npm i && cd ../backend && npm i",
+    "setup-all": "npm run setup-react-basics",
+    "prepare": "husky",
+    "prettier": "prettier **/*.{html,css,ts,tsx} --write",
+    "prettier:check": "prettier **/*.{html,css,ts,tsx} --check",
+    "lint-staged": "lint-staged -v"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "semantic-release": "^24.2.1"
+  },
+  "lint-staged": {
+    "**/*.{html,css,ts,tsx}": [
+      "prettier --write"
+    ]
+  }
+}
