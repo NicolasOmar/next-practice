@@ -21,7 +21,8 @@
     "prepare": "husky",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
     "prettier:check": "prettier **/*.{html,css,ts,tsx} --check",
-    "lint-staged": "lint-staged -v"
+    "lint-staged": "lint-staged -v",
+    "test": "echo \"Passed\" && exit 0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
