@@ -16,7 +16,7 @@
   "homepage": "https://github.com/NicolasOmar/next-practice#readme",
   "scripts": {
     "semantic-release": "semantic-release",
-    "setup-react-basics": "cd ./1-react-basics && npm i",
+    "setup-react-basics": "cd ./1-react-basics/frontend && npm i && cd ../backend && npm i",
     "setup-all": "npm run setup-react-basics",
     "prepare": "husky",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
