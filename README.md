@@ -34,6 +34,7 @@ npm run setup-all
 | ------ | ------ |
 | All | `npm run setup-all` |
 | React Basics | `npm run react-basics` |
+| Next Essentials | `npm run next-essentials` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder:
@@ -49,6 +50,9 @@ npm start
    - Understanding of its core hooks such as `useState` and `useEffect`.
    - Understand how to handle REST API calls.
    - Understanding and usage of routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
+  - Next Essentials (`2-next-essentials` folder)
+   - Create a new project using [Next provided command](https://nextjs.org/).
+   - Understanding of `file-based routing` and several reserved file names.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
