@@ -21,6 +21,9 @@ export default function Home() {
          */}
         <Link href='/about'>About me</Link>
       </p>
+      <p>
+        <Link href='/blog'>Blog</Link>
+      </p>
     </main>
   )
 }

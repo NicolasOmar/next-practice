@@ -21,7 +21,6 @@
     "setup-next-essentials": "cd ./2-next-essentials && npm i",
     "prepare": "husky",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
-    "prettier:check": "prettier **/*.{html,css,ts,tsx} --check",
     "lint-staged": "lint-staged -v",
     "test": "echo \"Passed\" && exit 0"
   },
