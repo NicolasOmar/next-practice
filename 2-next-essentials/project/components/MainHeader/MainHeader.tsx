@@ -5,6 +5,7 @@ import MainHeaderBackground from '../MainHeaderBackground/MainHeaderBackground'
 import { ROUTES } from '@/constants'
 import logoImg from '@/assets/logo.png'
 import cssModule from './MainHeader.module.css'
+import NavLink from '../NavLink/NavLink'
 
 const MainHeader = () => {
   return (
@@ -25,8 +26,20 @@ const MainHeader = () => {
         <nav className={cssModule.nav}>
           <ul>
             <li>
-              <Link href={ROUTES.MEALS}>Meals</Link>
-              <Link href={ROUTES.COMMUNITY}>Foodies community</Link>
+              <NavLink
+                href={ROUTES.MEALS}
+                activePath={ROUTES.MEALS}
+                activeClass={cssModule.active}
+                linkText='Browse Meals'
+              />
+            </li>
+            <li>
+              <NavLink
+                href={ROUTES.COMMUNITY}
+                activePath={ROUTES.COMMUNITY}
+                activeClass={cssModule.active}
+                linkText='Foodies community'
+              />
             </li>
           </ul>
         </nav>

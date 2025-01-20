@@ -53,6 +53,7 @@ npm start
   - Next Essentials (`2-next-essentials` folder)
    - Create a new project using [Next provided command](https://nextjs.org/).
    - Understanding of `file-based routing` and several reserved file names.
+   - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |

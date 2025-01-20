@@ -10,3 +10,7 @@ NextJs
     older way
     stable
     used in many projects
+  Server components !== Client components
+    Base React only uses client-based
+    Next uses client and server-based (it will be rendered in the server)
+      That helps loading less client-side JS (good for SEO)
