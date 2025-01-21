@@ -56,6 +56,8 @@ npm start
    - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.
    - Understand how to make API calls asynchronously on a server-side component.
    - Basic database script handling using `better-sqlite3`.
+   - Understanding and usage of several reserved components such as `page`, `loading`, `error` and `not-found`.
+   - Usage of granular loading using `Suspense`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
