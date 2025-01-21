@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import cssClass from './MealsGrid.module.css'
 import MealItem from '../MealItem/MealItem'
-import { MealEntity } from '@/interfaces'
+import { MealEntity } from '@/ts/interfaces'
 
 interface MealsGridProps {
   meals: MealEntity[]

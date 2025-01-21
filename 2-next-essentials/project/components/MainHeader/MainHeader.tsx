@@ -2,7 +2,7 @@ import Link from 'next/link'
 // There are some built-in components that Next provides to improve app's performance with specfic tasks such as lady loading (to name one)
 import Image from 'next/image'
 import MainHeaderBackground from '../MainHeaderBackground/MainHeaderBackground'
-import { ROUTES } from '@/constants'
+import { ROUTES } from '@/ts/constants'
 import logoImg from '@/assets/logo.png'
 import cssModule from './MainHeader.module.css'
 import NavLink from '../NavLink/NavLink'

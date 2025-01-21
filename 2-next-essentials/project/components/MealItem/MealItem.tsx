@@ -2,7 +2,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import cssClasses from './MealItem.module.css'
-import { MealEntity } from '@/interfaces'
+import { MealEntity } from '@/ts/interfaces'
 
 interface MealItemProps extends MealEntity {}
 

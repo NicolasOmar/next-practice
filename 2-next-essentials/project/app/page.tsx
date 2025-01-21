@@ -1,4 +1,4 @@
-import { ROUTES } from '@/constants'
+import { ROUTES } from '@/ts/constants'
 import Link from 'next/link'
 import ImageSlideshow from '@/components/ImageSlideshow/ImageSlideshow'
 import cssClasses from './page.module.css'
