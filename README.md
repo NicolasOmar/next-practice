@@ -54,6 +54,8 @@ npm start
    - Create a new project using [Next provided command](https://nextjs.org/).
    - Understanding of `file-based routing` and several reserved file names.
    - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.
+   - Understand how to make API calls asynchronously on a server-side component.
+   - Basic database script handling using `better-sqlite3`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
