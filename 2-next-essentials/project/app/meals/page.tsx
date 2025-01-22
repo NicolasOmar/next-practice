@@ -1,9 +1,19 @@
 import { Suspense } from 'react'
+import { Metadata } from 'next'
 import { getMeals } from '@/api/meals'
 import Link from 'next/link'
 import MealsGrid from '@/components/MealsGrid/MealsGrid'
+import { METADATA_TITLE, ROUTES } from '@/ts/constants'
 import cssClasses from './page.module.css'
-import { ROUTES } from '@/ts/constants'
+
+/**
+ * Next allows to inject Metadata on each page to improve
+ * On each metadata object, you can set the title and description as well as other related items
+ * In this case, I am adding a static string to the title
+ */
+export const metadata: Metadata = {
+  title: `${METADATA_TITLE}All foods`
+}
 
 const MealsToBeLoaded = async () => {
   /**

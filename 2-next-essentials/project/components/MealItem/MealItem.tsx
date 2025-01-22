@@ -4,15 +4,7 @@ import Image from 'next/image'
 import cssClasses from './MealItem.module.css'
 import { MealEntity } from '@/ts/interfaces'
 
-interface MealItemProps extends MealEntity {}
-
-const MealItem: FC<MealItemProps> = ({
-  title,
-  id,
-  image,
-  summary,
-  creator
-}) => {
+const MealItem: FC<MealEntity> = ({ title, id, image, summary, creator }) => {
   return (
     <article className={cssClasses.meal}>
       <header>

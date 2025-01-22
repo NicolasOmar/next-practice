@@ -7,7 +7,7 @@ const MealsPageNotFound = () => {
   return (
     <main className='not-found'>
       <h1>An error ocurred</h1>
-      <p>We couldn't find any kind of information for this specific URL.</p>
+      <p>{`We couldn't find any kind of information for this specific URL.`}</p>
     </main>
   )
 }
