@@ -34,9 +34,10 @@ npm run setup-all
 | ------ | ------ |
 | All | `npm run setup-all` |
 | React Basics | `npm run react-basics` |
+| Next Essentials | `npm run next-essentials` |
 
 ## How to run it
-To run any specific exercise, execute the following command in the project´s folder:
+To run any specific exercise, execute the following command in the project´s folder (can be a simplified way in `/concepts` or a more elaborated implementation in `/project`):
 ```sh
 npm start
 ```
@@ -49,6 +50,16 @@ npm start
    - Understanding of its core hooks such as `useState` and `useEffect`.
    - Understand how to handle REST API calls.
    - Understanding and usage of routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
+- Next Essentials (`2-next-essentials` folder)
+   - Create a new project using [Next provided command](https://nextjs.org/).
+   - Understanding of `file-based routing` and several reserved file names.
+   - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.
+   - Understand how to make API calls asynchronously on a server-side component.
+   - Basic database script handling using `better-sqlite3`.
+   - Understanding and usage of several reserved components such as `page`, `loading`, `error` and `not-found`.
+   - Usage of granular loading using `Suspense`.
+   - Understanding and usage of form-related handler methods such as `useFormStatus` and `useActionState`.
+   - Understanding and basic usage of metadata injection in static and dynamic ways.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
