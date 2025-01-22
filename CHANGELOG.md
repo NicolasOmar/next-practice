@@ -1,3 +1,25 @@
+# [2.0.0](https://github.com/NicolasOmar/next-practice/compare/v1.0.0...v2.0.0) (2025-01-22)
+
+
+### Bug Fixes
+
+* Understand how to make API calls asynchronously on a server-side component ([733f899](https://github.com/NicolasOmar/next-practice/commit/733f8996391e1daf951200b6916471c8dc389200))
+* Understand the difference between server-side and client-side components and how to implement them efficiently ([3fdb48d](https://github.com/NicolasOmar/next-practice/commit/3fdb48d59f82c3550a41acd8b8254ac35ef24195))
+* Understanding and basic usage of metadata injection in static and dynamic ways ([b10af0a](https://github.com/NicolasOmar/next-practice/commit/b10af0aab57de56694e07cbb3bdf6bf6c8c9e6c9))
+* Understanding and usage of form-related handler methods such as useFormStatus and useActionState ([7f28e49](https://github.com/NicolasOmar/next-practice/commit/7f28e4963c93eef6426aba655f57e81af1bbb99c))
+* Understanding and usage of several reserved components such as page, loading, error and not-found. Usage of granular loading using Suspense ([1b0aa38](https://github.com/NicolasOmar/next-practice/commit/1b0aa38b3d72033182b12f2d239eccd0219cf816))
+* understanding of file-based routing and several reserved file names ([860f3bf](https://github.com/NicolasOmar/next-practice/commit/860f3bf023972a7c99e69584cd816ef5cffc43dc))
+
+
+### Features
+
+* Exercise [#2](https://github.com/NicolasOmar/next-practice/issues/2). Next essentials ([39fbe63](https://github.com/NicolasOmar/next-practice/commit/39fbe6325a3dd7935eca0e290033b69091220dcd))
+
+
+### BREAKING CHANGES
+
+* New exercise added.
+
 # 1.0.0 (2025-01-17)
 
 
