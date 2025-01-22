@@ -58,6 +58,7 @@ npm start
    - Basic database script handling using `better-sqlite3`.
    - Understanding and usage of several reserved components such as `page`, `loading`, `error` and `not-found`.
    - Usage of granular loading using `Suspense`.
+   - Understanding and usage of form-related handler methods such as `useFormStatus` and `useActionState`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
