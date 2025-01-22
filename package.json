@@ -18,8 +18,7 @@
     "semantic-release": "semantic-release",
     "setup-all": "npm i && npm run setup-react-basics && npm run setup-next-essentials",
     "setup-react-basics": "cd ./1-react-basics/frontend && npm i && cd ../backend && npm i",
-    "setup-next-essentials": "cd ./2-next-essentials && npm i",
-    "prepare": "husky",
+    "setup-next-essentials": "cd ./2-next-essentials/concepts && npm i && cd ../project && npm i",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
     "lint-staged": "lint-staged -v",
     "test": "echo \"Passed\" && exit 0"
@@ -34,10 +33,5 @@
     "@semantic-release/release-notes-generator": "^14.0.3",
     "prettier": "^3.4.2",
     "semantic-release": "^24.2.1"
-  },
-  "lint-staged": {
-    "**/*.{html,css,ts,tsx}": [
-      "prettier --write"
-    ]
   }
 }

@@ -50,7 +50,7 @@ npm start
    - Understanding of its core hooks such as `useState` and `useEffect`.
    - Understand how to handle REST API calls.
    - Understanding and usage of routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
-  - Next Essentials (`2-next-essentials` folder)
+- Next Essentials (`2-next-essentials` folder)
    - Create a new project using [Next provided command](https://nextjs.org/).
    - Understanding of `file-based routing` and several reserved file names.
    - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.

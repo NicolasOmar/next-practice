@@ -1,6 +1,6 @@
 {
-  "name": "next-essentials-project",
-  "version": "0.1.0",
+  "name": "2-next-essentials-project",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "next dev --turbopack",
