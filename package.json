@@ -16,9 +16,10 @@
   "homepage": "https://github.com/NicolasOmar/next-practice#readme",
   "scripts": {
     "semantic-release": "semantic-release",
-    "setup-all": "npm i && npm run setup-react-basics && npm run setup-next-essentials",
+    "setup-all": "npm i && npm run setup-react-basics && npm run setup-next-essentials && npm run setup-routing-and-rendering",
     "setup-react-basics": "cd ./1-react-basics/frontend && npm i && cd ../backend && npm i",
     "setup-next-essentials": "cd ./2-next-essentials/concepts && npm i && cd ../project && npm i",
+    "setup-routing-and-rendering": "cd ./3-routing-and-rendering && npm i",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
     "lint-staged": "lint-staged -v",
     "test": "echo \"Passed\" && exit 0"

@@ -33,8 +33,9 @@ npm run setup-all
 | App Setup | Command |
 | ------ | ------ |
 | All | `npm run setup-all` |
-| React Basics | `npm run react-basics` |
-| Next Essentials | `npm run next-essentials` |
+| React Basics | `npm run setup-react-basics` |
+| Next Essentials | `npm run setup-next-essentials` |
+| Routing and page rendering | `npm run setup-routing-and-rendering` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder (can be a simplified way in `/concepts` or a more elaborated implementation in `/project`):
@@ -60,6 +61,8 @@ npm start
    - Usage of granular loading using `Suspense`.
    - Understanding and usage of form-related handler methods such as `useFormStatus` and `useActionState`.
    - Understanding and basic usage of metadata injection in static and dynamic ways.
+- Routing and page rendering (`3-routing-and-rendering` folder)
+   - Understanding and usage of `parallel routes`.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
