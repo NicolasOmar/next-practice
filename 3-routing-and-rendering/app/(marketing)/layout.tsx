@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import MainHeaderPage from '@/components/MainHeader/MainHeader'
 import { METADATA_TITLE } from '@/ts/constants'
-import './globals.css'
+// I added a level up to the import path because this import is in a folder below the root
+import '../globals.css'
 
 export const metadata: Metadata = {
   title: `${METADATA_TITLE}Page Routing & Rendering`,
@@ -15,12 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
-        <section id='page'>
-          <MainHeaderPage />
-          {children}
-        </section>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

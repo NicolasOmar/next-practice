@@ -62,7 +62,11 @@ npm start
    - Understanding and usage of form-related handler methods such as `useFormStatus` and `useActionState`.
    - Understanding and basic usage of metadata injection in static and dynamic ways.
 - Routing and page rendering (`3-routing-and-rendering` folder)
-   - Understanding and usage of `parallel routes`, `catch-all routes` and `intercepting routes`.
+   - Understanding and usage of routing features such as:
+      - `parallel routes`
+      - `catch-all routes`
+      - `intercepting routes`
+      - `content routes`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |

@@ -8,7 +8,6 @@ interface NewsDetailLayoutProps extends PropsWithChildren {
 }
 
 const NewsDetailLayout: FC<NewsDetailLayoutProps> = ({ children, modal }) => {
-  console.warn(modal)
   return (
     <>
       {modal}

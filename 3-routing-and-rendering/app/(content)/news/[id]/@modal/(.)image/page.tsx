@@ -13,6 +13,7 @@
 import { FC } from 'react'
 import { notFound } from 'next/navigation'
 import { DUMMY_NEWS } from '@/dummy-data'
+import ModalBackdrop from '@/components/ModalBackdrop/ModalBackdrop'
 
 interface NewsImageInterceptorPageProps {
   params: Promise<{ id: string }>
@@ -30,7 +31,7 @@ const NewsImageInterceptorPage: FC<NewsImageInterceptorPageProps> = async ({
 
   return (
     <>
-      <section className='modal-backdrop' />
+      <ModalBackdrop />
       <dialog
         className='modal'
         open

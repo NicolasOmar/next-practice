@@ -10,9 +10,6 @@ const MainHeaderPage = () => {
       <nav>
         <ul>
           <li>
-            <Link href={ROUTES.HOME}>Home</Link>
-          </li>
-          <li>
             <Link href={ROUTES.NEWS}>News</Link>
           </li>
           <li>
