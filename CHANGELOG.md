@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/NicolasOmar/next-practice/compare/v2.0.0...v3.0.0) (2025-01-29)
+
+
+### Bug Fixes
+
+* Understanding and usage of catch-all routes and intercepting routes ([e1fdda5](https://github.com/NicolasOmar/next-practice/commit/e1fdda54f3df8fadd53707eef75610daa708af89))
+* Understanding and usage of content routes ([0628ebc](https://github.com/NicolasOmar/next-practice/commit/0628ebcafa4686a1bc5ad489d7744bcf53eb277a))
+* Understanding and usage of parallel routes ([502f97b](https://github.com/NicolasOmar/next-practice/commit/502f97bca337b2ababc13ba4f6bd78fcbeded7b9))
+
+
+### Features
+
+* Exercise [#3](https://github.com/NicolasOmar/next-practice/issues/3). Routing and Rendering ([b9d2311](https://github.com/NicolasOmar/next-practice/commit/b9d23117ddb9299af49d8b0d7e8e73cab844dd33))
+
+
+### BREAKING CHANGES
+
+* New exercise added.
+
 # [2.0.0](https://github.com/NicolasOmar/next-practice/compare/v1.0.0...v2.0.0) (2025-01-22)
 
 
