@@ -1,6 +1,7 @@
 import { FC } from 'react'
-import { DUMMY_NEWS } from '@/dummy-data'
 import { notFound } from 'next/navigation'
+import { DUMMY_NEWS } from '@/dummy-data'
+import Link from 'next/link'
 
 interface NewsDetailPageProps {
   params: Promise<{ id: string }>
@@ -21,10 +22,13 @@ const NewsDetailPage: FC<NewsDetailPageProps> = async ({ params }) => {
   return newsItem ? (
     <article className='news-article'>
       <header>
-        <img
-          src={`/images/news/${newsItem.image ?? null}`}
-          alt={newsItem.title ?? ''}
-        />
+        <Link href={`/news/${id}/image`}>
+          <img
+            src={`/images/news/${newsItem.image ?? null}`}
+            alt={newsItem.title ?? ''}
+          />
+        </Link>
+
         <h1>{newsItem.title}</h1>
         <time dateTime={newsItem.date}>{newsItem.date}</time>
       </header>
