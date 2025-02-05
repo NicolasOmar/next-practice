@@ -67,6 +67,9 @@ npm start
       - `catch-all routes`
       - `intercepting routes`
       - `content routes`
+- Working with apis (`4-work-with-apis` folder)
+   - How to handle REST queries with async functions at component level
+   - How to handle loading states with `loading page` or `Suspense`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
