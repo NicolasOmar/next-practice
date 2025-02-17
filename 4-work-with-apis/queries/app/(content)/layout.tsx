@@ -10,8 +10,8 @@ import '../globals.css'
  */
 
 export const metadata: Metadata = {
-  title: `${METADATA_TITLE}Page Routing & Rendering`,
-  description: 'Learn how to route to different pages.'
+  title: `${METADATA_TITLE}Working with APIs | Queries`,
+  description: 'Learn how to integrate APIs to your page.'
 }
 
 export default function RootLayout({

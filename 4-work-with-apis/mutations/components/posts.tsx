@@ -1,0 +1,53 @@
+import Image from 'next/image'
+import LikeButton from './like-icon'
+import { formatDate } from '@/lib/format'
+import { PostEntity } from '@/ts/entities'
+import { FC } from 'react'
+
+const Post: FC<{ post: PostEntity }> = ({ post }) => {
+  return (
+    <article className='post'>
+      <div className='post-image'>
+        <Image
+          src={post.image}
+          alt={post.title}
+        />
+      </div>
+      <div className='post-content'>
+        <header>
+          <div>
+            <h2>{post.title}</h2>
+            <p>
+              Shared by {post.userFirstName} on{' '}
+              <time dateTime={post.createdAt}>
+                {formatDate(post.createdAt)}
+              </time>
+            </p>
+          </div>
+          <div>
+            <LikeButton />
+          </div>
+        </header>
+        <p>{post.content}</p>
+      </div>
+    </article>
+  )
+}
+
+const Posts: FC<{ posts: PostEntity[] }> = ({ posts }) => {
+  if (!posts || posts.length === 0) {
+    return <p>There are no posts yet. Maybe start sharing some?</p>
+  }
+
+  return (
+    <ul className='posts'>
+      {posts.map(post => (
+        <li key={post.id}>
+          <Post post={post} />
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export default Posts
