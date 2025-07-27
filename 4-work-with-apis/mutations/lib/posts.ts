@@ -1,8 +1,36 @@
 import sql from 'better-sqlite3';
 
+interface Post {
+  id: number;
+  image: string;
+  title: string;
+  content: string;
+  createdAt: string;
+  userFirstName: string;
+  userLastName: string;
+  likes: number;
+  isLiked: boolean;
+}
+
+interface PostInput {
+  imageUrl: string;
+  title: string;
+  content: string;
+  userId: number;
+}
+
+interface CountResult {
+  count: number;
+}
+
+interface SqlResult {
+  changes: number;
+  lastInsertRowid: number;
+}
+
 const db = new sql('posts.db');
 
-function initDb() {
+function initDb(): void {
   db.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY, 
@@ -32,7 +60,7 @@ function initDb() {
   // Creating two dummy users if they don't exist already
   const stmt = db.prepare('SELECT COUNT(*) AS count FROM users');
 
-  if (stmt.get().count === 0) {
+  if ((stmt.get() as CountResult).count === 0) {
     db.exec(`
     INSERT INTO users (first_name, last_name, email)
     VALUES ('John', 'Doe', 'john@example.com')
@@ -47,7 +75,7 @@ function initDb() {
 
 initDb();
 
-export async function getPosts(maxNumber) {
+export async function getPosts(maxNumber?: number): Promise<Post[]> {
   let limitClause = '';
 
   if (maxNumber) {
@@ -64,36 +92,36 @@ export async function getPosts(maxNumber) {
     ${limitClause}`);
 
   await new Promise((resolve) => setTimeout(resolve, 1000));
-  return maxNumber ? stmt.all(maxNumber) : stmt.all();
+  return maxNumber ? (stmt.all(maxNumber) as Post[]) : (stmt.all() as Post[]);
 }
 
-export async function storePost(post) {
+export async function storePost(post: PostInput): Promise<SqlResult> {
   const stmt = db.prepare(`
     INSERT INTO posts (image_url, title, content, user_id)
     VALUES (?, ?, ?, ?)`);
   await new Promise((resolve) => setTimeout(resolve, 1000));
-  return stmt.run(post.imageUrl, post.title, post.content, post.userId);
+  return stmt.run(post.imageUrl, post.title, post.content, post.userId) as SqlResult;
 }
 
-export async function updatePostLikeStatus(postId, userId) {
+export async function updatePostLikeStatus(postId: number, userId: number): Promise<SqlResult> {
   const stmt = db.prepare(`
     SELECT COUNT(*) AS count
     FROM likes
     WHERE user_id = ? AND post_id = ?`);
 
-  const isLiked = stmt.get(userId, postId).count === 0;
+  const isLiked = (stmt.get(userId, postId) as CountResult).count === 0;
 
   if (isLiked) {
-    const stmt = db.prepare(`
+    const insertStmt = db.prepare(`
       INSERT INTO likes (user_id, post_id)
       VALUES (?, ?)`);
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    return stmt.run(userId, postId);
+    return insertStmt.run(userId, postId) as SqlResult;
   } else {
-    const stmt = db.prepare(`
+    const deleteStmt = db.prepare(`
       DELETE FROM likes
       WHERE user_id = ? AND post_id = ?`);
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    return stmt.run(userId, postId);
+    return deleteStmt.run(userId, postId) as SqlResult;
   }
 }
