@@ -8,8 +8,8 @@ import { PostEntity } from '@/ts/entities'
 import { toggleLikePost } from '@/actions/posts'
 
 interface PostProps {
-  post: PostEntity;
-  postAction: (postId: number) => Promise<void>;
+  post: PostEntity
+  postAction: (postId: number) => Promise<void>
 }
 
 const Post: FC<PostProps> = ({ post, postAction }) => {
@@ -39,7 +39,8 @@ const Post: FC<PostProps> = ({ post, postAction }) => {
             */}
             <form
               action={postAction.bind(null, +post.id)}
-              className={post.isLiked ? 'liked' : ''}>
+              className={post.isLiked ? 'liked' : ''}
+            >
               <LikeButton />
             </form>
           </div>
@@ -56,9 +57,14 @@ const Posts: FC<{ posts: PostEntity[] }> = ({ posts }) => {
     We will need to use useOptimistic, a next hook that relies on the data we want to be handled and then a function to be ejecuted to give the user the feedback on the moment
     Hook's result will be an updated state and a function to be executed when an function calls it (like a api call or so)
   */
-  const [optimisticPosts, updateOptimisticPosts] = useOptimistic(posts, (previousPosts, updatedId) => {
-    return previousPosts.map(post => post.id === updatedId ? { ...post, isLiked: !post.isLiked } : post)
-  })
+  const [optimisticPosts, updateOptimisticPosts] = useOptimistic(
+    posts,
+    (previousPosts, updatedId) => {
+      return previousPosts.map(post =>
+        post.id === updatedId ? { ...post, isLiked: !post.isLiked } : post
+      )
+    }
+  )
 
   if (!optimisticPosts || optimisticPosts.length === 0) {
     return <p>There are no posts yet. Maybe start sharing some?</p>
@@ -73,7 +79,10 @@ const Posts: FC<{ posts: PostEntity[] }> = ({ posts }) => {
     <ul className='posts'>
       {optimisticPosts.map(post => (
         <li key={post.id}>
-          <Post post={post} postAction={updatePost} />
+          <Post
+            post={post}
+            postAction={updatePost}
+          />
         </li>
       ))}
     </ul>

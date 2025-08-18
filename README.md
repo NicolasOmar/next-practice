@@ -73,6 +73,7 @@ npm start
    - How to handle loading states with `loading page` or `Suspense`
    - How to handle form data and errors with `server actions`
    - How to renew cache on need with `revalidatePath`
+   - How to handle optimistically value changes with `useOptimistic`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
