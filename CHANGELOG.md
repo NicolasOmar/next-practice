@@ -1,3 +1,23 @@
+# [4.0.0](https://github.com/NicolasOmar/next-practice/compare/v3.0.0...v4.0.0) (2025-08-18)
+
+
+### Bug Fixes
+
+* How to handle form data and errors with server actions ([95d7914](https://github.com/NicolasOmar/next-practice/commit/95d791438e2677832c21fc41a138cd64ebee5727))
+* How to handle REST queries. How to handle loading states with loading page and Suspense ([54ac5b3](https://github.com/NicolasOmar/next-practice/commit/54ac5b30c16e4b86f9167f974e0ed803f0cbcef0))
+* how to renew cache using revalidatePath ([3455426](https://github.com/NicolasOmar/next-practice/commit/34554264ad73f6d9735114ea6eda4c77ab2cfa46))
+
+
+### Features
+
+* Exercise [#4](https://github.com/NicolasOmar/next-practice/issues/4). Working with APIs ([119afde](https://github.com/NicolasOmar/next-practice/commit/119afde726707b1e93354e5f8e72dccb6e90234c))
+* to handle optimistically value changes with useOptimistic ([5e9ce06](https://github.com/NicolasOmar/next-practice/commit/5e9ce06e8be345c8c9d19f5d821e1ad8896d59a5))
+
+
+### BREAKING CHANGES
+
+* New exercise added
+
 # [3.0.0](https://github.com/NicolasOmar/next-practice/compare/v2.0.0...v3.0.0) (2025-01-29)
 
 
