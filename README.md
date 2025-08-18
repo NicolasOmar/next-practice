@@ -36,6 +36,7 @@ npm run setup-all
 | React Basics | `npm run setup-react-basics` |
 | Next Essentials | `npm run setup-next-essentials` |
 | Routing and page rendering | `npm run setup-routing-and-rendering` |
+| Work with APIs | `npm run setup-work-with-apis` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder (can be a simplified way in `/concepts` or a more elaborated implementation in `/project`):
@@ -67,6 +68,12 @@ npm start
       - `catch-all routes`
       - `intercepting routes`
       - `content routes`
+- Working with apis (`4-work-with-apis` folder)
+   - How to handle REST queries with async functions at component level
+   - How to handle loading states with `loading page` or `Suspense`
+   - How to handle form data and errors with `server actions`
+   - How to renew cache on need with `revalidatePath`
+   - How to handle optimistically value changes with `useOptimistic`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
