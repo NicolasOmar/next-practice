@@ -72,6 +72,7 @@ npm start
    - How to handle REST queries with async functions at component level
    - How to handle loading states with `loading page` or `Suspense`
    - How to handle form data and errors with `server actions`
+   - How to renew cache on need with `revalidatePath`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
