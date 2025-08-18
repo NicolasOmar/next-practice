@@ -5,4 +5,5 @@ export interface PostEntity {
   userFirstName: string
   createdAt: string
   content: string
+  isLiked: boolean
 }
