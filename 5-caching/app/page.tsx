@@ -1,4 +1,6 @@
-export default function Home() {
+import React from 'react'
+
+const Home: React.FC = () => {
   return (
     <>
       <h1>Next.js Caching</h1>
@@ -7,5 +9,7 @@ export default function Home() {
         works therefore is key to avoid issues.
       </p>
     </>
-  );
+  )
 }
+
+export default Home

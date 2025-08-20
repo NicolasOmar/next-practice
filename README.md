@@ -74,6 +74,8 @@ npm start
    - How to handle form data and errors with `server actions`
    - How to renew cache on need with `revalidatePath`
    - How to handle optimistically value changes with `useOptimistic`
+- Caching (`5-caching` folder)
+   - 
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
