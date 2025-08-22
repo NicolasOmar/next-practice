@@ -1,3 +1,22 @@
+# [5.0.0](https://github.com/NicolasOmar/next-practice/compare/v4.0.0...v5.0.0) (2025-08-22)
+
+
+### Bug Fixes
+
+* How to cache data from direct data sources with cache ([28ee346](https://github.com/NicolasOmar/next-practice/commit/28ee346d6b2e0795c018607c5adae89c61ed5baf))
+* How to handle cache strategy by adjusting next fetch configuration ([1afca73](https://github.com/NicolasOmar/next-practice/commit/1afca73a7bb92e497ce473b2ccfe514aa90ca7fa))
+* How to revalidate cache based on paths with revalidatePath or API with revalidateTag ([f178cdb](https://github.com/NicolasOmar/next-practice/commit/f178cdb6095ff9c8494fb165b3b6071d2d634764))
+
+
+### Features
+
+* Exercise [#5](https://github.com/NicolasOmar/next-practice/issues/5). Caching ([65305dd](https://github.com/NicolasOmar/next-practice/commit/65305dd55a804e08f422f69179e5b4883983b868))
+
+
+### BREAKING CHANGES
+
+* New exercise added
+
 # [4.0.0](https://github.com/NicolasOmar/next-practice/compare/v3.0.0...v4.0.0) (2025-08-18)
 
 
