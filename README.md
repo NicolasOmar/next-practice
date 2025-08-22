@@ -77,6 +77,7 @@ npm start
 - Caching (`5-caching` folder)
    - How to handle cache strategy by adjusting next fetch configuration
    - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`
+   - How to cache data from direct data sources with `cache`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |

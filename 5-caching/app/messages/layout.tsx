@@ -1,3 +1,4 @@
+import { getMessages } from '@/lib/messages'
 import React, { ReactNode } from 'react'
 
 interface MessagesLayoutProps {
@@ -10,7 +11,7 @@ const MessagesLayout: React.FC<MessagesLayoutProps> = async ({ children }) => {
       'X-ID': 'layout'
     }
   })
-  const messages: { id: number; text: string }[] = await response.json()
+  const messages: { id: number; text: string }[] = await getMessages()
   const totalMessages = messages.length
 
   return (
