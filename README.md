@@ -76,6 +76,7 @@ npm start
    - How to handle optimistically value changes with `useOptimistic`
 - Caching (`5-caching` folder)
    - How to handle cache strategy by adjusting next fetch configuration
+   - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
