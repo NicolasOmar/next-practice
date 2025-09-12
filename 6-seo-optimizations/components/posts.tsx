@@ -1,9 +1,11 @@
+'use client'
 import React from 'react'
 import { formatDate } from '@/lib/format'
 import LikeButton from './like-icon'
 import { togglePostLikeStatus } from '@/actions/posts'
+import Image, { ImageLoaderProps } from 'next/image'
 
-interface PostType {
+interface PostEntity {
   id: number
   image: string
   title: string
@@ -15,17 +17,29 @@ interface PostType {
 }
 
 interface PostProps {
-  post: PostType
+  post: PostEntity
   action: (id: number) => void
+}
+
+/**
+ * The imageLoader function is used to optimize image loading using a third based service that
+ * will work as a proxy in order to deliver a more optimized version of the image
+ */
+const imageLoader = (imageUrl: ImageLoaderProps | string) => {
+  const urlSeparator = 'upload/'
+  const [imageStart, imageEnd] = imageUrl.toString().split(urlSeparator)
+  return `${imageStart}${urlSeparator}w_200,h_150,c_fill/${imageEnd}`
 }
 
 const Post: React.FC<PostProps> = ({ post, action }) => {
   return (
     <article className='post'>
       <div className='post-image'>
-        <img
+        <Image
+          loader={imageLoader}
           src={post.image}
           alt={post.title}
+          fill
         />
       </div>
       <div className='post-content'>
@@ -55,7 +69,7 @@ const Post: React.FC<PostProps> = ({ post, action }) => {
 }
 
 interface PostsProps {
-  posts: PostType[]
+  posts: PostEntity[]
 }
 
 const Posts: React.FC<PostsProps> = ({ posts }) => {
