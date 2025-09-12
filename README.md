@@ -21,6 +21,7 @@ Repository created to record my practice learning React with exercises based on 
 
 ## Requirements
  - [Node](https://nodejs.org/en/download/) `v20` or above
+ - For some exercises, you will need a [cloudinary](https://cloudinary.com) account and link its keys to its according env files.
 
 ## Setup
 After cloning the repo, go to the created folder and install the node packages.
@@ -37,9 +38,11 @@ npm run setup-all
 | Next Essentials | `npm run setup-next-essentials` |
 | Routing and page rendering | `npm run setup-routing-and-rendering` |
 | Work with APIs | `npm run setup-work-with-apis` |
+| Caching | `npm run setup-caching` |
+| SEO optimizations | `npm run setup-optimizations` |
 
 ## How to run it
-To run any specific exercise, execute the following command in the project´s folder (can be a simplified way in `/concepts` or a more elaborated implementation in `/project`):
+To run any specific exercise, execute the following command in the project´s folder:
 ```sh
 npm start
 ```
@@ -78,6 +81,9 @@ npm start
    - How to handle cache strategy by adjusting next fetch configuration
    - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`
    - How to cache data from direct data sources with `cache`
+- SEO optimizations (`6-seo-optimizations` folder)
+   - How to improve image loading times with `loader` and `priority` properties.
+   - How to set page metadata statically and dinamically
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
