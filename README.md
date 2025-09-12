@@ -83,6 +83,7 @@ npm start
    - How to cache data from direct data sources with `cache`
 - SEO optimizations (`6-seo-optimizations` folder)
    - How to improve image loading times with `loader` and `priority` properties.
+   - How to set page metadata statically and dinamically
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
