@@ -1,3 +1,21 @@
+# [6.0.0](https://github.com/NicolasOmar/next-practice/compare/v5.0.0...v6.0.0) (2025-09-12)
+
+
+### Bug Fixes
+
+* How to set page metadata statically and dinamically ([bc6cfba](https://github.com/NicolasOmar/next-practice/commit/bc6cfba3cec038a219c163edcf20919364400115))
+* Improving image loading times with image loaders and priority props ([644223d](https://github.com/NicolasOmar/next-practice/commit/644223dface171419058622bcadb6917b0fa1665))
+
+
+### Features
+
+* Exercise [#6](https://github.com/NicolasOmar/next-practice/issues/6). SEO optimizations ([3ba5a11](https://github.com/NicolasOmar/next-practice/commit/3ba5a1162181b2bc424ac60f2ea064d06cab3e1f))
+
+
+### BREAKING CHANGES
+
+* New exercise added
+
 # [5.0.0](https://github.com/NicolasOmar/next-practice/compare/v4.0.0...v5.0.0) (2025-08-22)
 
 
