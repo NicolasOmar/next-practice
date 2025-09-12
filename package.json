@@ -24,8 +24,7 @@
     "setup-caching": "cd ./5-caching && npm i && cd backend && npm i",
     "setup-optimizations": "cd ./6-seo-optimizations && npm i",
     "prettier": "prettier **/*.{html,css,ts,tsx} --write",
-    "lint-staged": "lint-staged -v",
-    "test": "echo \"Passed\" && exit 0"
+    "lint-staged": "lint-staged -v"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
