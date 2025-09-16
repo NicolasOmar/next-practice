@@ -40,6 +40,7 @@ npm run setup-all
 | Work with APIs | `npm run setup-work-with-apis` |
 | Caching | `npm run setup-caching` |
 | SEO optimizations | `npm run setup-optimizations` |
+| User authentication | `npm run setup-authentication` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder:
@@ -84,6 +85,7 @@ npm start
 - SEO optimizations (`6-seo-optimizations` folder)
    - How to improve image loading times with `loader` and `priority` properties.
    - How to set page metadata statically and dinamically
+- User authentication (`7-authentication` folder)
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
