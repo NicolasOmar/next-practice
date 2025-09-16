@@ -11,13 +11,7 @@ Repository created to record my practice learning React with exercises based on 
 
 ## Status
 - Current repo's version is ![Nextjs practice version](https://img.shields.io/github/package-json/v/nicolasomar/next-practice?color=success&label=%20&style=flat-square)
-
-### What does that version number mean?
-| Number | Meaning |
-| ------ | ------ |
-| `X.0.0` | How many exercises I have completed |
-| `0.X.0` | How many times I made progress on my next exercise |
-| `0.0.X` | Dependencies version updates and specific patches while the course is not completed |
+- **This course has been completed on 16/09/2025 - [Certificate](https://www.udemy.com/certificate/UC-375acfd7-464d-4024-8714-d3e76ea1b4df/)**
 
 ## Requirements
  - [Node](https://nodejs.org/en/download/) `v20` or above
@@ -40,6 +34,7 @@ npm run setup-all
 | Work with APIs | `npm run setup-work-with-apis` |
 | Caching | `npm run setup-caching` |
 | SEO optimizations | `npm run setup-optimizations` |
+| User authentication | `npm run setup-authentication` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder:
@@ -72,18 +67,23 @@ npm start
       - `intercepting routes`
       - `content routes`
 - Working with apis (`4-work-with-apis` folder)
-   - How to handle REST queries with async functions at component level
-   - How to handle loading states with `loading page` or `Suspense`
-   - How to handle form data and errors with `server actions`
-   - How to renew cache on need with `revalidatePath`
-   - How to handle optimistically value changes with `useOptimistic`
+   - How to handle REST queries with async functions at component level.
+   - How to handle loading states with `loading page` or `Suspense`.
+   - How to handle form data and errors with `server actions`.
+   - How to renew cache on need with `revalidatePath`.
+   - How to handle optimistically value changes with `useOptimistic`.
 - Caching (`5-caching` folder)
-   - How to handle cache strategy by adjusting next fetch configuration
-   - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`
-   - How to cache data from direct data sources with `cache`
+   - How to handle cache strategy by adjusting next fetch configuration.
+   - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`.
+   - How to cache data from direct data sources with `cache`.
 - SEO optimizations (`6-seo-optimizations` folder)
    - How to improve image loading times with `loader` and `priority` properties.
-   - How to set page metadata statically and dinamically
+   - How to set page metadata statically and dinamically.
+- User authentication (`7-authentication` folder)
+   - How to make a user creation flow with server-side rendering.
+   - How to handle a session id authentication using [Lucia](https://www.npmjs.com/package/lucia)
+     - THIS PACKAGE IS [DEPRECATED](https://lucia-auth.com/lucia-v3/migrate)
+   - How to handle signup, login and logout features using next strategies.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
