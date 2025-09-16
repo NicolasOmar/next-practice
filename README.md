@@ -11,13 +11,7 @@ Repository created to record my practice learning React with exercises based on 
 
 ## Status
 - Current repo's version is ![Nextjs practice version](https://img.shields.io/github/package-json/v/nicolasomar/next-practice?color=success&label=%20&style=flat-square)
-
-### What does that version number mean?
-| Number | Meaning |
-| ------ | ------ |
-| `X.0.0` | How many exercises I have completed |
-| `0.X.0` | How many times I made progress on my next exercise |
-| `0.0.X` | Dependencies version updates and specific patches while the course is not completed |
+- **This course has been completed on 16/09/2025 - [Certificate](https://www.udemy.com/certificate/UC-375acfd7-464d-4024-8714-d3e76ea1b4df/)**
 
 ## Requirements
  - [Node](https://nodejs.org/en/download/) `v20` or above
@@ -89,6 +83,7 @@ npm start
    - How to make a user creation flow with server-side rendering.
    - How to handle a session id authentication using [Lucia](https://www.npmjs.com/package/lucia)
      - THIS PACKAGE IS [DEPRECATED](https://lucia-auth.com/lucia-v3/migrate)
+   - How to handle signup, login and logout features using next strategies.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
