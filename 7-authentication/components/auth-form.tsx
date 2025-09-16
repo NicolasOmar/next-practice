@@ -4,11 +4,14 @@ import React from 'react'
 // Because we are using a hook, we need to make the form a client component
 // And include 'use client' at the top of the file
 import { useFormState } from 'react-dom'
+// With the auth action, we can execute the same function that will run the true one on the server side
+// After getting the mode from the .bind function
+import { auth } from '../actions/auth'
+import { AuthModeType } from '@/types'
 
-import { signup } from '../actions/auth'
+const AuthForm: React.FC<{ mode: AuthModeType }> = ({ mode }) => {
+  const [formState, formAction] = useFormState(auth.bind(null, mode), {})
 
-const AuthForm: React.FC = () => {
-  const [formState, formAction] = useFormState(signup, {})
   return (
     <form
       id='auth-form'
@@ -50,7 +53,11 @@ const AuthForm: React.FC = () => {
         <button type='submit'>Create Account</button>
       </p>
       <p>
-        <Link href='/'>Login with existing account.</Link>
+        {mode === 'login' ? (
+          <Link href='/auth?mode=signup'>Create new account</Link>
+        ) : (
+          <Link href='/auth?mode=login'>Login with existing account</Link>
+        )}
       </p>
     </form>
   )

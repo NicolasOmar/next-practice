@@ -88,3 +88,15 @@ export async function verifyAuthSession() {
     return sessionResult
   }
 }
+
+export async function destroyAuthSession() {
+  const sessionObj = await verifyAuthSession()
+
+  if (!sessionObj) {
+    return {
+      errors: ['Unauthorized access.']
+    }
+  }
+
+  luciaInstance.invalidateSession(sessionObj.session?.id as string)
+}
