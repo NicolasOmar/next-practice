@@ -73,19 +73,20 @@ npm start
       - `intercepting routes`
       - `content routes`
 - Working with apis (`4-work-with-apis` folder)
-   - How to handle REST queries with async functions at component level
-   - How to handle loading states with `loading page` or `Suspense`
-   - How to handle form data and errors with `server actions`
-   - How to renew cache on need with `revalidatePath`
-   - How to handle optimistically value changes with `useOptimistic`
+   - How to handle REST queries with async functions at component level.
+   - How to handle loading states with `loading page` or `Suspense`.
+   - How to handle form data and errors with `server actions`.
+   - How to renew cache on need with `revalidatePath`.
+   - How to handle optimistically value changes with `useOptimistic`.
 - Caching (`5-caching` folder)
-   - How to handle cache strategy by adjusting next fetch configuration
-   - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`
-   - How to cache data from direct data sources with `cache`
+   - How to handle cache strategy by adjusting next fetch configuration.
+   - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`.
+   - How to cache data from direct data sources with `cache`.
 - SEO optimizations (`6-seo-optimizations` folder)
    - How to improve image loading times with `loader` and `priority` properties.
-   - How to set page metadata statically and dinamically
+   - How to set page metadata statically and dinamically.
 - User authentication (`7-authentication` folder)
+   - How to make a user creation flow with server-side rendering.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |
