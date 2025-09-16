@@ -87,6 +87,8 @@ npm start
    - How to set page metadata statically and dinamically.
 - User authentication (`7-authentication` folder)
    - How to make a user creation flow with server-side rendering.
+   - How to handle a session id authentication using [Lucia](https://www.npmjs.com/package/lucia)
+     - THIS PACKAGE IS [DEPRECATED](https://lucia-auth.com/lucia-v3/migrate)
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Docker |

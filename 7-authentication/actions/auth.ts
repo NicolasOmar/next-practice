@@ -1,5 +1,6 @@
 'use server'
 
+import { createAuthSession } from "@/lib/auth"
 import { hashUserPassword } from "@/lib/hash"
 import { createUser } from "@/lib/user"
 import { redirect } from "next/navigation"
@@ -23,7 +24,9 @@ export async function signup(_: unknown, formData: FormData): Promise<{ errors?:
     const hashedPassword = hashUserPassword(password as string)
     
     try {
-      await createUser(email as string, hashedPassword)
+      const userResponse = await createUser(email as string, hashedPassword)
+      await createAuthSession(userResponse.id.toString())
+      
       redirect('/training')
     } catch (error) {
       return { errors: ['User already exists.'] }
