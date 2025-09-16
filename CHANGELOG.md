@@ -1,3 +1,22 @@
+# [7.0.0](https://github.com/NicolasOmar/next-practice/compare/v6.0.0...v7.0.0) (2025-09-16)
+
+
+### Bug Fixes
+
+* How to handle a session id authentication using lucia ([11c9949](https://github.com/NicolasOmar/next-practice/commit/11c9949d16f2ed1677faee1b89f4f79ff53639a5))
+* How to handle signup, login and logout features using next strategies ([52656aa](https://github.com/NicolasOmar/next-practice/commit/52656aae013b421cc4e9312248d1618282db83ea))
+* How to make a user creation flow with server-side rendering ([575e3c2](https://github.com/NicolasOmar/next-practice/commit/575e3c22a7f8cae5ebe51f969ce99ddd7d7b694a))
+
+
+### Features
+
+* Exercise [#7](https://github.com/NicolasOmar/next-practice/issues/7). User authentication ([0e68f4c](https://github.com/NicolasOmar/next-practice/commit/0e68f4cb21b16ec332fe4b325705549e59acd140))
+
+
+### BREAKING CHANGES
+
+* Last exercise added
+
 # [6.0.0](https://github.com/NicolasOmar/next-practice/compare/v5.0.0...v6.0.0) (2025-09-12)
 
 
