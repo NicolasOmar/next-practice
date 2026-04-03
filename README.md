@@ -1,5 +1,5 @@
-# <img src="https://cdn.simpleicons.org/nextdotjs" title="NextJs Practice Repo" alt="NextJs Practice Repo" width="30"> NextJs Practice
-Repository created to record my practice learning NextJs with exercises based on the [Udemy Course](https://www.udemy.com/course/nextjs-react-the-complete-guide) of [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
+# <img src="https://cdn.simpleicons.org/nextdotjs" title="NextJS Practice Repo" alt="NextJS Practice Repo" width="30"> NextJS Practice
+Repository created to record my practice learning NextJS with exercises based on the [Udemy Course](https://www.udemy.com/course/nextjs-react-the-complete-guide) of [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/).
 
 ## Table of contents
 - [Status](#status)
@@ -42,21 +42,21 @@ To run any specific exercise, execute the following command in the project´s fo
 npm start
 ```
 
-## Repo structure & what i learned in each exercise
+## Repo structure & what I learned in each exercise
  - React Basics (`1-react-basics` folder)
    - Create a new project based on `Vite`.
    - Understanding and usage of `CSS modules`.
-   - Learn about React concepts such as `components`, `props passage`, `input change methods`, `function passing though components` and `conditional rendering`.
+   - Learn about React concepts such as `components`, `props passage`, `input change methods`, `function passing though components`, and `conditional rendering`.
    - Understanding of its core hooks such as `useState` and `useEffect`.
    - Understand how to handle REST API calls.
-   - Understanding and usage of routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
+   - Understanding and usage of the routing engine implementation by `react-router-dom`, as well as data loading and posting techniques based on `loader` and `action` features.
 - Next Essentials (`2-next-essentials` folder)
    - Create a new project using [Next provided command](https://nextjs.org/).
    - Understanding of `file-based routing` and several reserved file names.
    - Understand the difference between `server-side` and `client-side components` and how to implement them efficiently.
    - Understand how to make API calls asynchronously on a server-side component.
    - Basic database script handling using `better-sqlite3`.
-   - Understanding and usage of several reserved components such as `page`, `loading`, `error` and `not-found`.
+   - Understanding and usage of several reserved components such as `page`, `loading`, `error`, and `not-found`.
    - Usage of granular loading using `Suspense`.
    - Understanding and usage of form-related handler methods such as `useFormStatus` and `useActionState`.
    - Understanding and basic usage of metadata injection in static and dynamic ways.
@@ -66,26 +66,26 @@ npm start
       - `catch-all routes`
       - `intercepting routes`
       - `content routes`
-- Working with apis (`4-work-with-apis` folder)
-   - How to handle REST queries with async functions at component level.
+- Working with APIs (`4-work-with-apis` folder)
+   - How to handle REST queries with async functions at the component level.
    - How to handle loading states with `loading page` or `Suspense`.
    - How to handle form data and errors with `server actions`.
    - How to renew cache on need with `revalidatePath`.
-   - How to handle optimistically value changes with `useOptimistic`.
+   - How to handle value optimistically changes with `useOptimistic`.
 - Caching (`5-caching` folder)
    - How to handle cache strategy by adjusting next fetch configuration.
    - How to revalidate cache based on paths with `revalidatePath` or API with `revalidateTag`.
    - How to cache data from direct data sources with `cache`.
 - SEO optimizations (`6-seo-optimizations` folder)
    - How to improve image loading times with `loader` and `priority` properties.
-   - How to set page metadata statically and dinamically.
+   - How to set page metadata statically and dynamically.
 - User authentication (`7-authentication` folder)
    - How to make a user creation flow with server-side rendering.
-   - How to handle a session id authentication using [Lucia](https://www.npmjs.com/package/lucia)
+   - How to handle a session ID authentication using [Lucia](https://www.npmjs.com/package/lucia)
      - THIS PACKAGE IS [DEPRECATED](https://lucia-auth.com/lucia-v3/migrate)
-   - How to handle signup, login and logout features using next strategies.
+   - How to handle signup, login, and logout features using the next strategies.
 
 ## Other practice repos
-| Node | Angular | GraphQL | React | HTML & CSS | Styling | Typescript | Python | Docker |
+| Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | Python | NestJS |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48px">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48px">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48px">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48px">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/html5" title="HTML and CSS Practice Repo" alt="HTML and CSS Practice Repo" width="48px">](https://github.com/NicolasOmar/html-css-practice) | [<img src="https://cdn.simpleicons.org/sass" title="Styling Practice Repo" alt="Styling Practice Repo" width="48px">](https://github.com/NicolasOmar/styling-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48px">](https://github.com/NicolasOmar/typescript-practice) | [<img src="https://cdn.simpleicons.org/python" title="Python Practice Repo" alt="Python Practice Repo" width="48px">](https://github.com/NicolasOmar/python-practice) | [<img src="https://cdn.simpleicons.org/docker" title="Docker Practice Repo" alt="Docker Practice Repo" width="48px">](https://github.com/NicolasOmar/docker-practice) |
+| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48px">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48px">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48px">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48px">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/html5" title="HTML and CSS Practice Repo" alt="HTML and CSS Practice Repo" width="48px">](https://github.com/NicolasOmar/html-css-practice) | [<img src="https://cdn.simpleicons.org/sass" title="Styling Practice Repo" alt="Styling Practice Repo" width="48px">](https://github.com/NicolasOmar/styling-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48px">](https://github.com/NicolasOmar/typescript-practice) | [<img src="https://cdn.simpleicons.org/python" title="Python Practice Repo" alt="Python Practice Repo" width="48px">](https://github.com/NicolasOmar/python-practice) | [<img src="https://cdn.simpleicons.org/nestjs" title="NestJS Practice Repo" alt="NestJS Practice Repo" width="48px">](https://github.com/NicolasOmar/nest-practice) |
